@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.codehaus.izpack</groupId>
   <artifactId>izpack</artifactId>
-  <version>5.1.4.fr1-SNAPSHOT</version>
+  <version>5.1.4.fr1</version>
   <packaging>pom</packaging>
   <name>IzPack parent</name>
   <description>
@@ -23,7 +23,7 @@
     <url>https://github.com/izpack/izpack</url>
     <connection>scm:git:git://github.com:1ab23c/izpack.git</connection>
     <developerConnection>scm:git:git@github.com:1ab23c/izpack.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>izpack-5.1.4.fr1</tag>
   </scm>
 
   <distributionManagement>
