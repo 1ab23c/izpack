@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.codehaus.izpack</groupId>
   <artifactId>izpack</artifactId>
-  <version>5.1.4-SNAPSHOT</version>
+  <version>5.1.4.fr1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>IzPack parent</name>
   <description>
@@ -27,11 +27,30 @@
   </scm>
 
   <distributionManagement>
+    <!-- S3 repositories copied from build tools project -->
+    <repository>
+      <id>s3-release</id>
+      <name>AWS S3 Release Repository</name>
+      <url>s3://integeo.com-mvn-release</url>
+    </repository>
+    <snapshotRepository>
+      <id>s3-snapshot</id>
+      <name>AWS S3 Snapshot Repository</name>
+      <url>s3://integeo.com-mvn-snapshot</url>
+    </snapshotRepository>
+    <site>
+      <id>vpc-site</id>
+      <name>AWS VPC Site</name>
+      <url>dav:https://docs.staff.integeo.com/m2sites/${project.artifactId}/</url>
+    </site>
+    <!-- Official repositories commented out -->
+    <!--
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
       <name>Sonatype Nexus snapshot repository</name>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+    -->
     <!-- We do not deploy directly to the staging repository, but via the Nexus staging plugin -->
     <!--
     <repository>
