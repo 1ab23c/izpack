@@ -22,7 +22,7 @@
   <scm>
     <url>https://github.com/izpack/izpack</url>
     <connection>scm:git@github.com:1ab23c/izpack.git</connection>
-    <developerConnection>scm:ggit@github.com:1ab23c/izpack.git</developerConnection>
+    <developerConnection>scm:git@github.com:1ab23c/izpack.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
